@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0c29">
+        <animate attributeName="stop-color" values="#0f0c29;#1a1a4e;#0f0c29" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" style="stop-color:#302b63">
+        <animate attributeName="stop-color" values="#302b63;#4a3f8a;#302b63" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#24243e">
+        <animate attributeName="stop-color" values="#24243e;#1e1e50;#24243e" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d2ff"/>
+      <stop offset="100%" style="stop-color:#7b2ff7"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="300" fill="url(#bg)" rx="12"/>
+
+  <!-- Grid dots -->
+  <g opacity="0.15">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0;30,30;0,0" dur="8s" repeatCount="indefinite"/>
+      <pattern id="dots" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+        <circle cx="15" cy="15" r="1.5" fill="#00d2ff"/>
+      </pattern>
+      <rect width="900" height="300" fill="url(#dots)"/>
+    </g>
+  </g>
+
+  <!-- Rotating gear - left -->
+  <g transform="translate(100, 150)" filter="url(#glow)">
+    <animateTransform attributeName="transform" type="rotate" from="0 100 150" to="360 100 150" dur="10s" repeatCount="indefinite"/>
+    <circle cx="0" cy="0" r="35" fill="none" stroke="#00d2ff" stroke-width="2" opacity="0.6"/>
+    <circle cx="0" cy="0" r="25" fill="none" stroke="#00d2ff" stroke-width="1.5" opacity="0.4"/>
+    <circle cx="0" cy="0" r="5" fill="#00d2ff" opacity="0.8"/>
+    <line x1="0" y1="-35" x2="0" y2="-45" stroke="#00d2ff" stroke-width="3" stroke-linecap="round"/>
+    <line x1="35" y1="0" x2="45" y2="0" stroke="#00d2ff" stroke-width="3" stroke-linecap="round"/>
+    <line x1="0" y1="35" x2="0" y2="45" stroke="#00d2ff" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-35" y1="0" x2="-45" y2="0" stroke="#00d2ff" stroke-width="3" stroke-linecap="round"/>
+    <line x1="24.7" y1="-24.7" x2="31.8" y2="-31.8" stroke="#00d2ff" stroke-width="2" stroke-linecap="round"/>
+    <line x1="24.7" y1="24.7" x2="31.8" y2="31.8" stroke="#00d2ff" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-24.7" y1="24.7" x2="-31.8" y2="31.8" stroke="#00d2ff" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-24.7" y1="-24.7" x2="-31.8" y2="-31.8" stroke="#00d2ff" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Rotating gear - right -->
+  <g transform="translate(800, 150)" filter="url(#glow)">
+    <animateTransform attributeName="transform" type="rotate" from="360 800 150" to="0 800 150" dur="12s" repeatCount="indefinite"/>
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#7b2ff7" stroke-width="2" opacity="0.6"/>
+    <circle cx="0" cy="0" r="28" fill="none" stroke="#7b2ff7" stroke-width="1.5" opacity="0.4"/>
+    <circle cx="0" cy="0" r="6" fill="#7b2ff7" opacity="0.8"/>
+    <line x1="0" y1="-40" x2="0" y2="-52" stroke="#7b2ff7" stroke-width="3" stroke-linecap="round"/>
+    <line x1="40" y1="0" x2="52" y2="0" stroke="#7b2ff7" stroke-width="3" stroke-linecap="round"/>
+    <line x1="0" y1="40" x2="0" y2="52" stroke="#7b2ff7" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-40" y1="0" x2="-52" y2="0" stroke="#7b2ff7" stroke-width="3" stroke-linecap="round"/>
+    <line x1="28.3" y1="-28.3" x2="36.8" y2="-36.8" stroke="#7b2ff7" stroke-width="2" stroke-linecap="round"/>
+    <line x1="28.3" y1="28.3" x2="36.8" y2="36.8" stroke="#7b2ff7" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-28.3" y1="28.3" x2="-36.8" y2="36.8" stroke="#7b2ff7" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-28.3" y1="-28.3" x2="-36.8" y2="-36.8" stroke="#7b2ff7" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Orbiting particles -->
+  <g>
+    <circle r="3" fill="#00d2ff" opacity="0.9">
+      <animateMotion dur="4s" repeatCount="indefinite" path="M200,150 C200,80 700,80 700,150 C700,220 200,220 200,150"/>
+    </circle>
+    <circle r="2.5" fill="#7b2ff7" opacity="0.8">
+      <animateMotion dur="5s" repeatCount="indefinite" path="M200,150 C200,80 700,80 700,150 C700,220 200,220 200,150" begin="1.5s"/>
+    </circle>
+    <circle r="2" fill="#ff6b9d" opacity="0.7">
+      <animateMotion dur="6s" repeatCount="indefinite" path="M200,150 C200,80 700,80 700,150 C700,220 200,220 200,150" begin="3s"/>
+    </circle>
+  </g>
+
+  <!-- Infinity symbol -->
+  <g transform="translate(450, 150)" filter="url(#glow)">
+    <path d="M-50,0 C-50,-30 -20,-30 0,0 C20,30 50,30 50,0 C50,-30 20,-30 0,0 C-20,30 -50,30 -50,0 Z"
+          fill="none" stroke="url(#accent)" stroke-width="3">
+      <animate attributeName="stroke-width" values="3;4;3" dur="2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Title text -->
+  <text x="450" y="75" text-anchor="middle" font-family="Consolas, 'Courier New', monospace" font-size="16" fill="#00d2ff" font-weight="bold" letter-spacing="4" filter="url(#glow)">
+    INFINITE FREE CODING
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+  </text>
+  <text x="450" y="250" text-anchor="middle" font-family="Consolas, 'Courier New', monospace" font-size="16" fill="#7b2ff7" font-weight="bold" letter-spacing="4" filter="url(#glow)">
+    ROTATION STRATEGY
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite" begin="1.5s"/>
+  </text>
+
+  <!-- Year badge -->
+  <rect x="395" y="115" width="110" height="30" rx="15" fill="none" stroke="url(#accent)" stroke-width="1.5">
+    <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  <text x="450" y="136" text-anchor="middle" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="url(#accent)" font-weight="bold">
+    24/7 NEVER STOP
+  </text>
+
+  <!-- Bottom accent line -->
+  <line x1="100" y1="280" x2="800" y2="280" stroke="url(#accent)" stroke-width="1" opacity="0.4">
+    <animate attributeName="x1" values="100;200;100" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="800;700;800" dur="5s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Top accent line -->
+  <line x1="100" y1="20" x2="800" y2="20" stroke="url(#accent)" stroke-width="1" opacity="0.4">
+    <animate attributeName="x1" values="100;200;100" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="800;700;800" dur="5s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Phase dots -->
+  <g>
+    <circle cx="250" cy="280" r="3" fill="#00d2ff" opacity="0.6">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="350" cy="280" r="3" fill="#7b2ff7" opacity="0.6">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+    </circle>
+    <circle cx="450" cy="280" r="3" fill="#ff6b9d" opacity="0.6">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+    <circle cx="550" cy="280" r="3" fill="#00ff88" opacity="0.6">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite" begin="1.5s"/>
+    </circle>
+    <circle cx="650" cy="280" r="3" fill="#00d2ff" opacity="0.6">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite" begin="2s"/>
+    </circle>
+  </g>
+</svg>

@@ -1,4 +1,6 @@
-# Infinite-Free-Coding-Rotation-Strategy
+<p align="center">
+  <img src="assets/banner.svg" alt="Infinite Free Coding Rotation Strategy Banner" width="100%"/>
+</p>
 
 # 🔄 24-Hour AI Coding "Infinite Rotation" Strategy
 ## Continuous Development Without Running Out of Free Quotas (2026 Edition)
