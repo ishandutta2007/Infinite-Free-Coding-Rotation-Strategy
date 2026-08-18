@@ -19,8 +19,8 @@ This repository outlines a tactical rotation of terminal-based AI agents to main
 | [**Freebuff**](https://freebuff.com) | High-Tier Model Access | 6 one-hour free sessions per day |
 | [**Kilo CLI**](https://kilo.ai/articles/best-cli-coding-agents) | Platform Flexibility | Most model-agnostic free connection tier |
 | [**GitHub Copilot CLI**](https://github.com) | IDE/Terminal Context | 2,000 monthly completions / 50 chats |
-| [**Devin CLI**](https://github.com) | free resets every 5 hours | not clear |
-| [**Grok CLI**](https://github.com) | no official free tier but works for 1-2 chats per day | 1-2 chats per day |
+| [**Devin CLI**](https://docs.devin.ai/cli#windows) | free resets every 5 hours | not clear |
+| [**Grok CLI**](https://x.ai/news/grok-build-cli) | no official free tier but works for 1-2 chats per day | 1-2 chats per day |
 
 ---
 
