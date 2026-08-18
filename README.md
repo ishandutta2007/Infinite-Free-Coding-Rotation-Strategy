@@ -16,7 +16,7 @@ This repository outlines a tactical rotation of terminal-based AI agents to main
 | [**Antigravity CLI**](https://antigravity.google) | Agentic Orchestration | Multi-agent rolling session blocks |
 | [**OpenCode**](https://github.com) | Terminal-First Workflow | Unlimited with [Ollama](https://ollama.com) / Local LLMs |
 | [**Aider**](https://aider.chat) | Git-Native Editing | Free software; pair with free API keys |
-| [**Freebuff**](https://freebuff.com) | High-Tier Model Access | 6 one-hour free sessions per day |
+| [**Freebuff**](https://freebuff.com/?ref=ref-3b7a0fcd-714d-4877-a2b4-cf42839c5fc6) | High-Tier Model Access | 6 one-hour free sessions per day |
 | [**Kilo CLI**](https://kilo.ai/articles/best-cli-coding-agents) | Platform Flexibility | Most model-agnostic free connection tier |
 | [**GitHub Copilot CLI**](https://github.com) | IDE/Terminal Context | 2,000 monthly completions / 50 chats |
 | [**Devin CLI**](https://docs.devin.ai/cli#windows) | free resets every 5 hours | not clear |
@@ -39,7 +39,7 @@ To maintain a continuous workflow, rotate through these tools based on their spe
 *   **Workflow:** Use Aider for surgical, git-native code edits that need a clean audit trail. Pair these with free API tiers from providers like Qwen (which offers 2,000 requests/day).
 
 #### Phase 3: The Evening Sprint (18:00 - 23:00)
-*   **Tool:** [**Freebuff**](https://freebuff.com)
+*   **Tool:** [**Freebuff**](https://freebuff.com/?ref=ref-3b7a0fcd-714d-4877-a2b4-cf42839c5fc6)
 *   **Strategy:** Activate your **6 daily one-hour sessions**. 
 *   **Tip:** Use these sessions for intense bursts of coding that require high-tier reasoning models without using up your API credits.
 
@@ -60,6 +60,8 @@ To maintain a continuous workflow, rotate through these tools based on their spe
 
 ### 🔗 Essential Links
 *   **Migration Guide:** [Gemini CLI to Antigravity CLI](
-*   [Freebuff Web & CLI](https://freebuff.com)
+*   [Freebuff Web & CLI](https://freebuff.com/?ref=ref-3b7a0fcd-714d-4877-a2b4-cf42839c5fc6)
 *   [GitHub Copilot CLI Docs](https://github.com)
 *   [OpenCode GitHub Repository](https://github.com)
+
+> This page may contain affiliate links.
